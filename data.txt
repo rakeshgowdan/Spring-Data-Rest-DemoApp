@@ -1,0 +1,20 @@
+//Save invoice
+POST -> http://localhost:8080/invoices
+
+{
+    "name":"Inv01",
+    "amount":100,
+    "number":"2021002",
+    "recreceivedDate":"13-04-2021",
+    "type":"normal",
+    "vendor":"vendor2",
+    "comments":"on hold"
+}
+*****************************************************
+Base URL = http://localhost:8080/invoices
+
+GET URL : http://localhost:8080/invoices [to get all Invoices]
+GET URL : http://localhost:8080/invoices/{id} [to get invoice with a particular id]
+POST URL: http://localhost:8080/invoices [to save Invoice ]
+PUT URL : http://localhost:8080/invoices/{id} [to modify an Invoice with a particular id]
+DELETE URL : http://localhost:8080/invoices/{id} [to delete an Invoice with a particular id]
